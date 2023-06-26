@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados interclasses</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onpageshow="Newpage()">
+    <div class="container">
+        <header>
+            <h1>Cronograma interclasses 2023</h1>
+        </header>
+
+        <section class="content-wrapper">
+            <div class="count_input">
+                <label>Selecione a modalidade/turno:</label>
+                <select name="modalidade" id="modalidade" onchange="changeRead()">
+                    <option value="clean">Selecione uma opção</option>
+                    <optgroup label="Manhã">
+                        <option value="fifa_manha">FIFA Manhã</option>
+                        <option value="jd_manha">Just-Dance Manhã</option>
+                        <option value="tm_manha">Tênis de Mesa Manhã</option>
+                        <option value="pebo_manha">Pebolim Manhã</option>
+                        <option value="atle_manha">Atletismo Manhã</option>
+                        <option value="xadrez_manha">Xadrez Manhã</option>
+                        <option value="queima_manha">Queimada Manhã</option>
+                        <option value="fut_manha">Futsal Manhã</option>
+                        <option value="volei_manha">Vôlei Manhã</option>
+                        <option value="fila_manha">Filantrópica Manhã</option>
+                    </optgroup>
+
+                    <optgroup label="Tarde">
+                        <option value="fifa_tarde">FIFA Tarde</option>                   
+                        <option value="jd_tarde">Just-Dance Tarde</option>                                             
+                        <option value="pebo_tarde">Pebolim Tarde</option>                        
+                        <option value="atle_tarde">Atletismo Tarde</option>                        
+                        <option value="pb_tarde">Pique-bandeira Tarde</option>                        
+                        <option value="queima_tarde">Queimada Tarde</option>                        
+                        <option value="fut_tarde">Futsal Tarde</option>                        
+                        <option value="volei_tarde">Vôlei Tarde</option>                      
+                        <option value="fila_tarde">Filantrópica Tarde</option>
+                    </optgroup>                    
+                </select>
+            </div>
+
+            <div class="imageWrapper"></div>
+
+            <div class="links">
+                <a href="./index.html">Resultados</a>
+                <a href="https://sway.office.com/Gybpy9vuAdjC1T2P?ref=Link" target="_blank">Registros</a>
+            </div>
+        </section>
+
+        <Footer>
+            <img src="./images/logoSesi.png"></img>
+        </Footer>
+    </div>
+
+    <script src="links.js"></script>
+</body>
+</html>

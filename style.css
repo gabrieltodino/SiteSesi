@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: #73292e;
+    font: normal 15pt Arial;
+}
+
+div.container{
+    max-width: 750px;
+    margin: 0 auto;
+
+}
+
+header, footer{
+    text-align: center;
+    color: #ddd;
+}
+
+header h1{
+    padding-top: 3%;
+}
+
+section.content-wrapper{
+    background-color: #e7eae9;
+    margin: 30px 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+section.content-wrapper .count_input{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.content-wrapper .count_input label{
+    display: inline-block;
+}
+
+section.content-wrapper .count_input select {
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+section.content-wrapper table{
+    width: 100%;
+    border-width: 5px;
+    border-color: black;
+    text-align: center;
+    overflow-x: auto;
+}
+
+section.content-wrapper .links{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+section.content-wrapper .links a{ 
+    padding-top: 10px;
+    color: #595959;
+    text-decoration: none;
+}
+
+section.content-wrapper .imageWrapper{ 
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+    div.container{
+        margin: 0;
+    }
+    section.content-wrapper{
+        margin: 25px 10px;
+    }
+    section.content-wrapper .count_input{
+        margin-bottom: 20px;
+    }
+  }
+
+footer img {
+    max-width: 140px;
+}
+
