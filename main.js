@@ -120,14 +120,10 @@ function Newpage() {
   }
 
   for (let row of tableArr) {
-    //Insert a new row element into the table element
       table.insertRow();
-    //Iterate over every index(cell) in each array(row)
+    
       for (let cell of row) {
-    //While iterating over the index(cell)
-    //insert a cell into the table element
         let newCell = table.rows[table.rows.length - 1].insertCell();
-    //add text to the created cell element
         newCell.textContent = cell;
       }
     }
@@ -143,19 +139,12 @@ function changeRead (){
     }
 
       tableWrapper.removeChild(table);
-      //create a Table Object
       table = document.createElement('tbody');
 
-      //iterate over every array(row) within tableArr
       for (let row of tableArr) {
-      //Insert a new row element into the table element
         table.insertRow();
-      //Iterate over every index(cell) in each array(row)
         for (let cell of row) {
-      //While iterating over the index(cell)
-      //insert a cell into the table element
           let newCell = table.rows[table.rows.length - 1].insertCell();
-      //add text to the created cell element
           newCell.textContent = cell;
         }
       }
